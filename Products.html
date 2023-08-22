@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="icon" type="img/png" href="favicon mweow.png">
+    <link rel="stylesheet" href="mweow.css">
+    <title>All Products - Mweow</title>
+</head>
+<body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="mweow logo.png" width="150px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <a href="view-cart.html" title="View Cart">
+                            <img src="cart.png" width="30px" height="30px" alt="Cart" class="cart-icon">
+                            <div class="totalQuantity">0</div>
+                          </a>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+<div class="small-container">
+
+    <div class="row row-2">
+      <h2>All Products</h2>
+      <select id="product-category">
+        <option value="all">All Products</option>
+        <option value="shirt">Shirt</option>
+        <option value="shoes">Shoes</option>
+        <option value="jacket">Jacket</option>
+    </select>
+
+    <select id="sort-options">
+        <option value="default">Default</option>
+        <option value="price">Sort by Price</option>
+        <option value="rating">Sort by Rating</option>
+    </select>
+    </div>
+
+    <div  class="row">
+        <div class="col-4">
+            <img src="Anya Minimalist.png" alt="Product Image">
+            <h4>Anya Minimalist Shirst</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>₱315</p>
+            <button class="add-to-cart-btn" data-product-name="Anya Minimalist Shirt" data-price="315" data-image-src="Anya Minimalist.png">Add to Cart</button>
+        </div>
+
+        <div class="col-4">
+            <img src="Aot jacket.png" alt="Product Image">
+            <h4>Survey Corps Jacket</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p>₱550</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Survey Corps Jacket',550,'Aot jacket.png')">Add to Cart</button>
+        </div>
+
+        <div class="col-4">
+            <img src="Itachi top.png" alt="Product Image">
+            <h4>Itachi High Tops</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p>₱815</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Itachi High Tops',815,'Itachi top.png')">Add to Cart</button>
+        </div>
+
+        <div class="col-4">
+            <img src="Mai- Mock up.png" alt="Product Image">
+            <h4>Mai Sakurajima Shirt</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>₱315</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Mai Sakurajima Shirt',315,'Mai- Mock up.png')">Add to Cart</button>
+        </div>
+    </div>
+</div>
+<!-- second container-->
+<div class="small-container">
+<div  class="row">
+    <div class="col-4">
+        <img src="ZENITSU_V1_MOCK_1556x2000.png" alt="Product Image">
+        <h4>Zenitsu Shirt</h4>
+        <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+        <p>₱339</p>
+        <button class="add-to-cart-btn" onclick="addToCart('Zenitsu Shirt',339,'ZENITSU_V1_MOCK_1556x2000.png')">Add to Cart</button>
+    </div>
+
+    <div class="col-4">
+        <img src="itachi.jpg" alt="Product Image">
+        <h4>Itachi Jacket</h4>
+        <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+        <p>₱550</p>
+        <button class="add-to-cart-btn" onclick="addToCart('Itachi Jacket',550,'itachi.jpg')">Add to Cart</button>
+    </div>
+
+    <div class="col-4">
+        <img src="pain hi.png" alt="Product Image">
+        <h4>Pain High Tops</h4>
+        <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+        <p>₱815</p>
+        <button class="add-to-cart-btn" onclick="addToCart('Pain High Tops',815,'pain hi.png')">Add to Cart</button>
+    </div>
+
+    <div class="col-4">
+        <img src="kakashi mock up.png" alt="Product Image">
+        <h4>Kakashi Shirt</h4>
+        <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+        <p>₱349</p>
+        <button class="add-to-cart-btn" onclick="addToCart('Natsu Kakashi Shirt',349,'kakashi mock up.png')">Add to Cart</button>
+    </div>
+</div>
+</div>
+
+<div class="small-container">
+    <div  class="row">
+        <div class="col-4">
+            <img src="Natsu Mock up.png" alt="Product Image">
+            <h4>Natsu Graphic Shirt</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>₱349</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Natsu Graphic Shirt',349,'Natsu Mock up.png')">Add to Cart</button>
+        </div>
+
+        <div class="col-4">
+            <img src="Law jacket.png" alt="Product Image">
+            <h4>Law Sabaody Jacket</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>₱550</p>
+            <button class="add-to-cart-btn"  onclick="addToCart('Law Sabaody Jacket',550,'Law jacket.png')">Add to Cart</button>
+        </div>
+
+        <div class="col-4">
+            <img src="Wano shoes.png"alt="Product Image">
+            <h4>Wano Manga Hi-Tops</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>₱815</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Wano Manga Hi-Tops',815,'Wano shoes.png')">Add to Cart</button>
+        </div>
+
+        <div class="col-4">
+            <img src="Dazai Minimal Mock up.png"alt="Product Image">
+            <h4>Dazai Minimalist Shirt</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>₱315</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Ichigo Bankai Shirt',315,'Dazai Minimal Mock up.png')">Add to Cart</button>
+        </div>
+    </div>
+    </div>
+
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4" data-category="shirt" alt="Product Image">
+                <img src="Bankai Mock Up.png">
+                <h4>Ichigo Bankai Shirt</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>₱349</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Ichigo Bankai Shirt',349,'Bankai Mock Up.png')" >Add to Cart</button>
+            </div>
+
+            <div class="col-4">
+                <img src="Baryon Mock Up.png" alt="Product Image">
+                <h4>Baryon Mode Shirt</h4>
+                <div class="rating">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>₱349</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Baryon Mode Shirt',315,'Baryon Mock Up.png')">Add to Cart</button>
+            </div>
+
+            <div class="col-4">
+                <img src="minimal chainsaw.png" alt="Product Image">
+                <h4>Chainsawman Shirt</h4>
+                <div class="rating">
+                    <i cl  m mass="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>₱315</p>
+                <button  class="add-to-cart-btn" onclick="addToCart('Chainsawman Shirt',315,'minimal chainsaw.png')">Add to Cart</button>
+            </div>
+
+            <div class="col-4">
+                <img src="GEAR 5 MOCK.png" alt="Product Image">
+                <h4>Gear 5 Shirt</h4>
+                <div class="rating">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>₱339</p>
+                <button  class="add-to-cart-btn" onclick="addToCart('Gear 5 Shirt',339,'GEAR 5 MOCK.png')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+<!--Footer-->
+<footer class="footer bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <h3>Mweow Apparel</h3>
+                <p class="text-white">Your one stop anime apparel shop!</p>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>About Us</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="about us 2.html" class="text-white">About Us</a></li>
+                            <li class="list-inline-item"><a href="contact us.html" class="text-white">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Follow Us</h3>
+                        <ul class="list-inline social-icons">
+                            <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100089490462085" target="_blank" class="text-white"><i class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="https://shopee.ph/mweow_apparel" target="_blank" class="text-white"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/" target="_blank" class="text-white"><i class="fab fa-instagram fa-lg"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="my-2">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="text-white">&copy; Mweow Apparel</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End of footer section-->
+<script src="mweow.js"></script>
+</body>
+</html>
